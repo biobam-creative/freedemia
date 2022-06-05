@@ -1,0 +1,32 @@
+.card {
+  width: 14rem;
+  color: #004e38;
+}
+
+.card img {
+  height: 35%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.card-link {
+  color: #004e38;
+  text-decoration: none;
+}
+
+.card-link :hover {
+  color: #e6b711;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 9.5rem;
+  }
+  .card-title {
+    font-size: 0.9rem;
+  }
+}

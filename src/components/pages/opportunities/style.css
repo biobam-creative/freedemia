@@ -1,0 +1,27 @@
+.wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  background-color: #004e38;
+  color: #e6b711;
+  padding: 10px;
+}
+
+.body {
+  display: flex;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .body {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title {
+    font-size: 0.9rem;
+  }
+}
