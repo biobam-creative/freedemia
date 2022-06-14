@@ -7,7 +7,6 @@ import Loader from "../../ui/loader/loader";
 
 import InfiniteScroll from "react-infinite-scroll-component";
 
-import config from "../../../config.json";
 import httpServices from "../../../services/httpServices";
 
 const Opportunities = () => {

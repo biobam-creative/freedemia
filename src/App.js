@@ -5,10 +5,6 @@ import "./App.css";
 import NavBar from "./components/ui/navbar/navbar";
 import Opportunities from "./components/pages/opportunities/opportunities";
 import Courses from "./components/pages/courses/courses";
-// import InfiniteScroll from "./components/pages/infiniteScroll";
-import PdfSplit from "./components/pages/pdfSplit/pdfSplit";
-import PdfMerge from "./components/pages/pdfMerge/pdfMerge";
-import Download from "./components/pages/download/download";
 
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -19,16 +15,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      {/* <BootstrapNav /> */}
       <ToastContainer />
       <div>
         <Switch>
-          <Route path="/pdfSplit" component={PdfSplit} />
-          <Route path="/pdfMerge" component={PdfMerge} />
-          <Route path="/courses" component={Courses} />
           <Route path="/opportunities" component={Opportunities} />
-          <Route path="/download" component={Download} />
-          <Route exact path="/courses" component={Courses} />
+
+          <Route exact path="/" component={Courses} />
         </Switch>
       </div>
     </div>

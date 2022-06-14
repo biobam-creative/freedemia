@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import axios from "axios";
 
 import Card from "../../ui/card/card";
 import Loader from "../../ui/loader/loader";
 
-import config from "../../../config.json";
 import httpServices from "../../../services/httpServices";
 
 import "./style.css";
@@ -55,7 +53,7 @@ const Courses = () => {
           dataLength={courses.length}
           next={fetchData}
           hasMore={moreExist}
-          loader={<h4>Loading</h4>}
+          loader={"Loading..."}
           endMessage={
             <p style={{ textAlign: "center" }}>
               <b>No more Posts</b>
@@ -68,7 +66,7 @@ const Courses = () => {
                 key={course.id}
                 data={course}
                 title={course.title}
-                image={course.image}
+                image={`https://res.cloudinary.com/freedemia/${course.image}`}
               />
             ))}
           </div>
